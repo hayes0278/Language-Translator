@@ -1,0 +1,12 @@
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\bin\Debug\net8.0\LanguageTranslator.ClassLibrary.deps.json
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\bin\Debug\net8.0\LanguageTranslator.ClassLibrary.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\bin\Debug\net8.0\LanguageTranslator.ClassLibrary.pdb
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\Debug\net8.0\LanguageTranslator.ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\Debug\net8.0\LanguageTranslator.ClassLibrary.AssemblyInfoInputs.cache
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\Debug\net8.0\LanguageTranslator.ClassLibrary.AssemblyInfo.cs
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\Debug\net8.0\LanguageTranslator.ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\Debug\net8.0\LanguageTranslator.ClassLibrary.sourcelink.json
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\Debug\net8.0\LanguageTranslator.ClassLibrary.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\Debug\net8.0\refint\LanguageTranslator.ClassLibrary.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\Debug\net8.0\LanguageTranslator.ClassLibrary.pdb
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\Debug\net8.0\ref\LanguageTranslator.ClassLibrary.dll

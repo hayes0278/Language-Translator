@@ -18,6 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LanguageTranslator.ClassLibrary\LanguageTranslator.ClassLibrary.csproj" />
+    <ProjectReference Include="..\LanguageTranslator.WebApp\LanguageTranslator.WebApp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="NUnit.Framework" />
   </ItemGroup>
 
