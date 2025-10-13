@@ -91,6 +91,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "LanguageTranslator.ClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/LanguageTranslator.ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LanguageTranslator.ClassLibrary.dll": {}
+        }
       }
     }
   },
@@ -239,10 +249,16 @@
         "swashbuckle.aspnetcore.swaggerui.9.0.6.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "LanguageTranslator.ClassLibrary/1.0.0": {
+      "type": "project",
+      "path": "../LanguageTranslator.ClassLibrary/LanguageTranslator.ClassLibrary.csproj",
+      "msbuildProject": "../LanguageTranslator.ClassLibrary/LanguageTranslator.ClassLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "LanguageTranslator.ClassLibrary >= 1.0.0",
       "Swashbuckle.AspNetCore >= 9.0.6"
     ]
   },
@@ -278,7 +294,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Code\\GitHub\\Language-Translator\\Solution\\LanguageTranslator.ClassLibrary\\LanguageTranslator.ClassLibrary.csproj": {
+              "projectPath": "C:\\Code\\GitHub\\Language-Translator\\Solution\\LanguageTranslator.ClassLibrary\\LanguageTranslator.ClassLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

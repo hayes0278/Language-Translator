@@ -1,4 +1,4 @@
-@LanguageTranslator.WebAPI_HostAddress = http://localhost:5253
+@LanguageTranslator.WebAPI_HostAddress = https://localhost:7013
 
 GET {{LanguageTranslator.WebAPI_HostAddress}}/weatherforecast/
 Accept: application/json

@@ -39,3 +39,5 @@ C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Debug\
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Debug\net8.0\LanguageTranslator.WebApp.csproj.AssemblyReference.cache
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Debug\net8.0\LanguageTranslator.WebApp.MvcApplicationPartsAssemblyInfo.cs
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Debug\net8.0\Language.73BAC8AE.Up2Date
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Debug\net8.0\LanguageTranslator.ClassLibrary.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Debug\net8.0\LanguageTranslator.ClassLibrary.pdb
