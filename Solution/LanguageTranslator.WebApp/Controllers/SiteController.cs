@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LanguageTranslator.WebApp.Controllers
 {
-    public class HomeController : Controller
+    public class SiteController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<SiteController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public SiteController(ILogger<SiteController> logger)
         {
             _logger = logger;
         }
