@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageTranslator.NunitTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageTranslator.ClassLibrary", "LanguageTranslator.ClassLibrary\LanguageTranslator.ClassLibrary.csproj", "{5C3C5515-F079-4DA6-8324-4944806C5E87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageTranslator.WebAPI", "LanguageTranslator.WebAPI\LanguageTranslator.WebAPI.csproj", "{7108308F-1777-4E1F-9AEB-89321315FF54}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{5C3C5515-F079-4DA6-8324-4944806C5E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C3C5515-F079-4DA6-8324-4944806C5E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C3C5515-F079-4DA6-8324-4944806C5E87}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7108308F-1777-4E1F-9AEB-89321315FF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7108308F-1777-4E1F-9AEB-89321315FF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7108308F-1777-4E1F-9AEB-89321315FF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7108308F-1777-4E1F-9AEB-89321315FF54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
