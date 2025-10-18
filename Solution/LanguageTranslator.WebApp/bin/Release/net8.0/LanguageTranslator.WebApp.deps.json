@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "LanguageTranslator.WebApp/1.0.0": {
         "dependencies": {
+          "LanguageTranslator.ClassLibrary": "1.0.0",
           "Swashbuckle.AspNetCore": "9.0.6"
         },
         "runtime": {
@@ -60,6 +61,14 @@
             "fileVersion": "9.0.6.1840"
           }
         }
+      },
+      "LanguageTranslator.ClassLibrary/1.0.0": {
+        "runtime": {
+          "LanguageTranslator.ClassLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -110,6 +119,11 @@
       "sha512": "sha512-WGsw/Yop9b16miq8TQd4THxuEgkP5cH3+DX93BrX9m0OdPcKNtg2nNm77WQSAsA+Se+M0bTiu8bUyrruRSeS5g==",
       "path": "swashbuckle.aspnetcore.swaggerui/9.0.6",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.9.0.6.nupkg.sha512"
+    },
+    "LanguageTranslator.ClassLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

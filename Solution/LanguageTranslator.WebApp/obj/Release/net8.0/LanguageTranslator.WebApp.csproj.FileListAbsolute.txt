@@ -39,3 +39,10 @@ C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Releas
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Release\net8.0\LanguageTranslator.WebApp.csproj.AssemblyReference.cache
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Release\net8.0\LanguageTranslator.WebApp.MvcApplicationPartsAssemblyInfo.cs
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Release\net8.0\Language.73BAC8AE.Up2Date
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Release\net8.0\LanguageTranslator.ClassLibrary.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Release\net8.0\LanguageTranslator.ClassLibrary.pdb
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Release\net8.0\LanguageTranslator.WebApp.Translations.Translations_de-de.resources
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Release\net8.0\LanguageTranslator.WebApp.Translations.Translations_en-us.resources
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Release\net8.0\LanguageTranslator.WebApp.Translations.Translations_es-es.resources
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Release\net8.0\LanguageTranslator.WebApp.Translations.Translations_fr-fr.resources
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Release\net8.0\LanguageTranslator.WebApp.csproj.GenerateResource.cache

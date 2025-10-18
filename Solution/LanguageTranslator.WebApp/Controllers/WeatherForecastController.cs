@@ -1,3 +1,4 @@
+using LanguageTranslator.ClassLibrary;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LanguageTranslator.WebAPI.Controllers
@@ -19,9 +20,9 @@ namespace LanguageTranslator.WebAPI.Controllers
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<Language> Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            return Enumerable.Range(1, 5).Select(index => new Language
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),

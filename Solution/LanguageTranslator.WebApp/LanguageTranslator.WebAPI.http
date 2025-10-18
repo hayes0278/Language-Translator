@@ -1,6 +1,6 @@
 @LanguageTranslator.WebAPI_HostAddress = https://localhost:7013
 
-GET {{LanguageTranslator.WebAPI_HostAddress}}/weatherforecast/
+GET {{LanguageTranslator.WebAPI_HostAddress}}/languagetranslator/
 Accept: application/json
 
 ###
