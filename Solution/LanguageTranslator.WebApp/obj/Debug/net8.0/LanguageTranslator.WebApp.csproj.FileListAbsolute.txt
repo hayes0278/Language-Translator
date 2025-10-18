@@ -46,3 +46,8 @@ C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Debug\
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Debug\net8.0\LanguageTranslator.WebApp.Translations.Translations_es-es.resources
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Debug\net8.0\LanguageTranslator.WebApp.Translations.Translations_fr-fr.resources
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\obj\Debug\net8.0\LanguageTranslator.WebApp.csproj.GenerateResource.cache
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Debug\net8.0\Azure.AI.Translation.Text.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Debug\net8.0\Azure.Core.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Debug\net8.0\System.ClientModel.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Debug\net8.0\System.Memory.Data.dll

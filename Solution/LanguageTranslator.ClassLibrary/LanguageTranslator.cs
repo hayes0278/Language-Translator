@@ -1,4 +1,7 @@
-﻿namespace LanguageTranslator.ClassLibrary
+﻿using Azure;
+using Azure.AI.Translation.Text;
+
+namespace LanguageTranslator.ClassLibrary
 {
     public class LanguageTranslator
     {
@@ -18,12 +21,14 @@
         #endregion
 
         #region public methods
-
-        public static void MyPubicMethod()
+        public static void MyPublicMethod(string inputText, string targetLanguage)
         {
+            string translatorKey = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
+            string region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
 
+            OnDemandTranslator translator = new OnDemandTranslator(translatorKey, region);
+            translator.TranslateTextAsync(inputText, targetLanguage);
         }
-
         #endregion
 
         #region private methods
