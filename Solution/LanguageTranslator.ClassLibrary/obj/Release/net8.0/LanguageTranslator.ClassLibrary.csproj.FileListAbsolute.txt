@@ -10,3 +10,4 @@ C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\Release\net8.0\refint\LanguageTranslator.ClassLibrary.dll
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\Release\net8.0\LanguageTranslator.ClassLibrary.pdb
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\Release\net8.0\ref\LanguageTranslator.ClassLibrary.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.ClassLibrary\obj\Release\net8.0\LanguageTranslator.ClassLibrary.csproj.AssemblyReference.cache

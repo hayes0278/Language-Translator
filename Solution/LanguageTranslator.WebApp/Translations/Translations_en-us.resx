@@ -117,12 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="start_over" xml:space="preserve">
-    <value>Start Over</value>
-    <comment>Start Over</comment>
+  <data name="a_lightweight_language_translator_web_tool" xml:space="preserve">
+    <value>A lightweight language translator web tool.</value>
+    <comment>A lightweight language translator web tool.</comment>
+  </data>
+  <data name="all_rights_reserved" xml:space="preserve">
+    <value>All rights reserved</value>
+    <comment>All rights reserved</comment>
+  </data>
+  <data name="from_language" xml:space="preserve">
+    <value>From Language</value>
+    <comment>From Language</comment>
+  </data>
+  <data name="language_translator" xml:space="preserve">
+    <value>Language Translator</value>
+    <comment>Language Translator</comment>
+  </data>
+  <data name="to_language" xml:space="preserve">
+    <value>To Language</value>
+    <comment>To Language</comment>
   </data>
   <data name="welcome_to" xml:space="preserve">
     <value>Welcome to</value>
     <comment>Welcome to</comment>
+  </data>
+  <data name="text_to_translate" xml:space="preserve">
+    <value>Text to Translate</value>
+    <comment>Text to Translate</comment>
   </data>
 </root>

@@ -21,8 +21,11 @@ namespace LanguageTranslator.ClassLibrary
         #endregion
 
         #region public methods
-        public static void MyPublicMethod(string inputText, string targetLanguage)
+        public static void TranslateText(string inputText, string targetLanguage)
         {
+            Environment.SetEnvironmentVariable("AZURE_TRANSLATOR_KEY", "");
+            Environment.SetEnvironmentVariable("AZURE_TRANSLATOR_REGION", "");
+
             string translatorKey = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
             string region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
 
