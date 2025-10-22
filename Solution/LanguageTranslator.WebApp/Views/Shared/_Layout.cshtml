@@ -38,8 +38,8 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - Language Translator All rights reserved. - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> | 
-            <select id="selUILanguage" name="selUILanguage">
+            &copy; 2025 - Language Translator All rights reserved. - <a asp-area="" asp-controller="Site" asp-action="Privacy">Privacy</a> | 
+            <select id="selUILanguage" name="selUILanguage" onchange="changeLanguage(this.value)">
                 <option value="en-US">English</option>
                 <option value="fr-FR">French</option>
                 <option value="de-DE">German</option>

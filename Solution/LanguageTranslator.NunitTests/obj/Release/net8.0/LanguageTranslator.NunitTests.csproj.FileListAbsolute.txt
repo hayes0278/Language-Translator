@@ -119,3 +119,4 @@ C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.NunitTests\bin\Re
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.NunitTests\bin\Release\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.NunitTests\bin\Release\net8.0\System.ClientModel.dll
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.NunitTests\bin\Release\net8.0\System.Memory.Data.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.NunitTests\bin\Release\net8.0\languages.json

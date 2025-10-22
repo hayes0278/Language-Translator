@@ -47,25 +47,27 @@
   },
   "components": {
     "schemas": {
+      "Enum": {
+        "type": "object",
+        "additionalProperties": false
+      },
       "Language": {
         "type": "object",
         "properties": {
-          "date": {
-            "type": "string",
-            "format": "date"
-          },
-          "temperatureC": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "temperatureF": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "summary": {
+          "abbreviation": {
             "type": "string",
             "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "nativeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "direction": {
+            "$ref": "#/components/schemas/Enum"
           }
         },
         "additionalProperties": false

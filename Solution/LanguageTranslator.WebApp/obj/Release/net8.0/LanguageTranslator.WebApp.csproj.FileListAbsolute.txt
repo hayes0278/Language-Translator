@@ -51,3 +51,4 @@ C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Releas
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Release\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Release\net8.0\System.ClientModel.dll
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Release\net8.0\System.Memory.Data.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.WebApp\bin\Release\net8.0\languages.json
