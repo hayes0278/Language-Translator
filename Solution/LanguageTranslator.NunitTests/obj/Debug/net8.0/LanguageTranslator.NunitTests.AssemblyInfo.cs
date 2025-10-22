@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LanguageTranslator.NunitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8e93d04527d9e2899b98c3673ea76f5c270bd05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8578a138c8f59a1ad64d50c35fa46b24ff875ed4")]
 [assembly: System.Reflection.AssemblyProductAttribute("LanguageTranslator.NunitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LanguageTranslator.NunitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

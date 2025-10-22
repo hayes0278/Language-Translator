@@ -1,5 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home";
+    @using Microsoft.AspNetCore.Mvc.Localization
+    @inject IViewLocalizer Localizer
 }
 
 <div class="text-center">
@@ -37,7 +39,9 @@
                 <label for="txtToInput">To Text:</label><br />
                 <textarea id="txtToInput" name="txtToInput" rows="5" cols="50">@ViewBag.TranslatedText</textarea>
             </p>
-
+            <p>
+                @Localizer["all_rights_reserved"]
+            </p>
             <p>
                 <input type="submit" id="btnSubmit" name="btnSubmit" value="Translate" />
                 <input type="reset" id="btnReset" name="btnReset" value="Start Again" />

@@ -61,7 +61,7 @@ namespace LanguageTranslator.WebApp.Controllers
                 ViewBag.InputText = translationInput;
                 ViewBag.TranslatedText = "Probando la aplicación traductor de idiomas.";
 
-                ViewBag.TestTranslation = _localizer["lightweight_language_translator_web_tool"];
+                ViewBag.TestTranslation = _localizer["lightweight_language_translator_web_tool"].Value;
             }
 
             return View();
