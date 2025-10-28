@@ -143,3 +143,7 @@ C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.NunitTests\bin\De
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.NunitTests\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.NunitTests\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
 C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.NunitTests\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.NunitTests\bin\Debug\net8.0\de-DE\LanguageTranslator.WebApp.resources.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.NunitTests\bin\Debug\net8.0\en-US\LanguageTranslator.WebApp.resources.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.NunitTests\bin\Debug\net8.0\es-ES\LanguageTranslator.WebApp.resources.dll
+C:\Code\GitHub\Language-Translator\Solution\LanguageTranslator.NunitTests\bin\Debug\net8.0\fr-FR\LanguageTranslator.WebApp.resources.dll

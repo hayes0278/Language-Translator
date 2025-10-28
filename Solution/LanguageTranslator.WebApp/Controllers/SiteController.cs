@@ -42,26 +42,13 @@ namespace LanguageTranslator.WebApp.Controllers
                     ViewBag.ToLanguage = toLanguage;
                 }
 
-                /*
-                string languageFile = "C:\\Code\\GitHub\\Language-Translator\\Solution\\LanguageTranslator.WebApp\\languages.json";
-                string jsonString = File().ReadAllText(languageFile);
-
-                Language languageData = JsonSerializer.Deserialize<Language>(jsonString);
-
-                OnDemandTranslator translator = new OnDemandTranslator("934yh6hy23ye45e45hweviohv98ye45y6e78945hwww698", "eastus");
-                string translatedText = await translator.TranslateTextAsync(translationInput, toLanguage);
-
-                if (translatedText != null)
-                {
-                    Console.WriteLine($"Original: {translationInput}");
-                    Console.WriteLine($"Translated ({toLanguage}): {translatedText}");
-                }
-                */
+                LanguageTranslatorApp app = new LanguageTranslatorApp();
+                app.TranslateText(translationInput, toLanguage);
 
                 ViewBag.InputText = translationInput;
                 ViewBag.TranslatedText = "Probando la aplicación traductor de idiomas.";
 
-                ViewBag.TestTranslation = _localizer["lightweight_language_translator_web_tool"].Value;
+                ViewBag.TestTranslation = _localizer["lightweight_language_translator_web_tool"];
             }
 
             return View();

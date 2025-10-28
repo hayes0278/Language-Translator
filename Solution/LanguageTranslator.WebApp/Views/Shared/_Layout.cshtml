@@ -24,9 +24,6 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Site" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Site" asp-action="Help">Help</a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -40,13 +37,15 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - Language Translator - All rights reserved. - <a asp-area="" asp-controller="Site" asp-action="Privacy">Privacy</a> | 
+            &copy; <span id="year"></span> - Language Translator - _localizer["All rights reserved"].
+            <!--
             <select id="selUILanguage" name="selUILanguage" onchange="changeLanguage(this.value)">
                 <option value="en-US">English</option>
                 <option value="fr-FR">French</option>
                 <option value="de-DE">German</option>
                 <option value="es-ES">Spanish</option>
             </select>
+            -->
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

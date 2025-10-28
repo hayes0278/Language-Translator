@@ -28,16 +28,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Code/GitHub/Language-Translator/Solution/LanguageTranslator.WebApp/Views/Site/Help.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2l0ZVxIZWxwLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Code/GitHub/Language-Translator/Solution/LanguageTranslator.WebApp/Views/Site/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2l0ZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Code/GitHub/Language-Translator/Solution/LanguageTranslator.WebApp/Views/Site/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2l0ZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Code/GitHub/Language-Translator/Solution/LanguageTranslator.WebApp/Views/_ViewImports.cshtml]

@@ -14,6 +14,20 @@
         },
         "runtime": {
           "LanguageTranslator.WebApp.dll": {}
+        },
+        "resources": {
+          "de-DE/LanguageTranslator.WebApp.resources.dll": {
+            "locale": "de-DE"
+          },
+          "en-US/LanguageTranslator.WebApp.resources.dll": {
+            "locale": "en-US"
+          },
+          "es-ES/LanguageTranslator.WebApp.resources.dll": {
+            "locale": "es-ES"
+          },
+          "fr-FR/LanguageTranslator.WebApp.resources.dll": {
+            "locale": "fr-FR"
+          }
         }
       },
       "Azure.AI.Translation.Text/1.0.0": {

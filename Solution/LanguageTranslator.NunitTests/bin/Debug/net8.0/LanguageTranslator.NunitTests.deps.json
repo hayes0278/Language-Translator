@@ -1650,6 +1650,20 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
+        },
+        "resources": {
+          "de-DE/LanguageTranslator.WebApp.resources.dll": {
+            "locale": "de-DE"
+          },
+          "en-US/LanguageTranslator.WebApp.resources.dll": {
+            "locale": "en-US"
+          },
+          "es-ES/LanguageTranslator.WebApp.resources.dll": {
+            "locale": "es-ES"
+          },
+          "fr-FR/LanguageTranslator.WebApp.resources.dll": {
+            "locale": "fr-FR"
+          }
         }
       }
     }

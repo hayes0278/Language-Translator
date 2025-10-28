@@ -34,3 +34,5 @@ function replaceCurrentPage(newUrl) {
 function changeLanguage(newLanguage) {
     alert(newLanguage);
 }
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
