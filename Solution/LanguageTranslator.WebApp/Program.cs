@@ -25,8 +25,8 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     options.SupportedUICultures = supportedCultures;
 });
 
-Environment.SetEnvironmentVariable("AZURE_TRANSLATOR_KEY", "5cfdXJTOV2yj7EcOyHKothRsJMpnI0JG3IjAKVttJctay4cZRWLoJQQJ99BJACYeBjFXJ3w3AAAbACOGxtXd");
-Environment.SetEnvironmentVariable("AZURE_TRANSLATOR_REGION", "eastus");
+Environment.SetEnvironmentVariable("AZURE_TRANSLATOR_KEY", "");
+Environment.SetEnvironmentVariable("AZURE_TRANSLATOR_REGION", "");
 Environment.SetEnvironmentVariable("AZURE_TRANSLATOR_ENDPOINT", "https://api.cognitive.microsofttranslator.com/");
 
 var app = builder.Build();
