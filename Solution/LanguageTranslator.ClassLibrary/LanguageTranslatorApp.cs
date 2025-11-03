@@ -1,5 +1,6 @@
 ﻿using Azure;
 using Azure.AI.Translation.Text;
+using static System.Net.WebRequestMethods;
 
 namespace LanguageTranslator.ClassLibrary
 {
@@ -7,17 +8,13 @@ namespace LanguageTranslator.ClassLibrary
     {
         #region fields
 
-        private string _testMe;
+        private Language[] _languageList;
+        private int _languageCount = 0;
+        private string _translatedText = null;
 
         #endregion
 
         #region constructors
-
-        public LanguageTranslatorApp()
-        {
-            _testMe = "Testing";
-        }
-
         #endregion
 
         #region public methods
@@ -34,11 +31,49 @@ namespace LanguageTranslator.ClassLibrary
 
                 OnDemandTranslator translator = new OnDemandTranslator(translatorKey, region);      
                 translator.TranslateTextAsync(inputText, targetLanguage);
+                _translatedText = translator.TranslatedText;
 
                 Console.WriteLine("Translation task finished.");
             });
 
             backgroundTask.Wait();
+        }
+
+        public void GetLanguageList ()
+        {
+            // Replace with your actual Translator service key and endpoint
+            string key = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
+            string endpoint = "https://api.cognitive.microsofttranslator.com/";
+            string region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
+
+            var client = new TextTranslationClient(new AzureKeyCredential(key), region);
+
+            try
+            {
+                Response<GetSupportedLanguagesResult> response = client.GetSupportedLanguages(cancellationToken: CancellationToken.None);
+                GetSupportedLanguagesResult languages = response.Value;
+
+                Console.WriteLine($"Number of supported languages for translate operations: {languages.Translation.Count}.");
+                _languageCount = languages.Translation.Count;
+
+                Console.WriteLine("Supported languages:");
+
+                foreach (var language in languages.Translation)
+                {
+                    Language appLanguage = new Language();
+                    appLanguage.Name = language.Value.Name;
+                    appLanguage.Direction = language.Value.Directionality.ToString();
+                    appLanguage.Name = language.Key;
+                    _languageList.Append(appLanguage);
+
+                    Console.WriteLine($"- Code: {language.Key}, Name: {language.Value.Name}, Direction: {language.Value.Directionality}");
+                }
+            }
+            catch (RequestFailedException exception)
+            {
+                Console.WriteLine($"Error Code: {exception.ErrorCode}");
+                Console.WriteLine($"Message: {exception.Message}");
+            }
         }
         #endregion
 
@@ -53,10 +88,16 @@ namespace LanguageTranslator.ClassLibrary
 
         #region properties
 
-        public string TestMe
+        public Language[] LanguageList
         {
-            get { return _testMe; }
-            set { _testMe = value; }
+            get { return _languageList; }
+            set { _languageList = value; }
+        }
+
+        public string TranslatedText
+        {
+            get { return _translatedText; }
+            set { _translatedText = value; }
         }
 
         #endregion

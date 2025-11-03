@@ -9,7 +9,10 @@ namespace LanguageTranslator.ClassLibrary
     public class OnDemandTranslator
     {
         private readonly TextTranslationClient _client;
-        private readonly string _region;
+        private string _region;
+        private string _language;
+        private string _originalText;
+        private string _translatedText;
 
         public OnDemandTranslator(string translatorKey, string region)
         {
@@ -24,7 +27,8 @@ namespace LanguageTranslator.ClassLibrary
             {
                 Response<IReadOnlyList<TranslatedTextItem>> response = await _client.TranslateAsync(targetLanguage, textToTranslate);
                 TranslatedTextItem translation = response.Value.FirstOrDefault();
-                return translation?.Translations?.FirstOrDefault()?.Text;
+                _translatedText = translation?.Translations?.FirstOrDefault()?.Text;
+                return _translatedText;
             }
             catch (RequestFailedException ex)
             {
@@ -58,5 +62,15 @@ namespace LanguageTranslator.ClassLibrary
                 Console.WriteLine($"Translated ({targetLang}): {translatedText}");
             }
         }
+
+        #region properties
+
+        public string TranslatedText
+        {
+            get { return _translatedText; }
+            set { _translatedText = value; }
+        }
+
+        #endregion
     }
 }

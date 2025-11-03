@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "LanguageTranslator.WebAPI.Controllers.LanguageTranslatorController",
+    "ContainingType": "LanguageTranslator.WebAPI.Controllers.LanguageController",
     "Method": "Get",
-    "RelativePath": "LanguageTranslator",
+    "RelativePath": "Language",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -19,5 +19,37 @@
       }
     ],
     "EndpointName": "GetLanguageTranslation"
+  },
+  {
+    "ContainingType": "LanguageTranslator.WebAPI.Controllers.LanguageTranslatorController",
+    "Method": "PostLanguageTranslator",
+    "RelativePath": "LanguageTranslator",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "text",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "language",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "PostLanguageTranslator"
   }
 ]

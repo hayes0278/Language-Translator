@@ -5,7 +5,8 @@
 
 <div class="text-center">
     <h1 class="display-4">Language Translator</h1>
-    <p>@ViewBag.TestTranslation</p>
+    <p>A lightweight language translator web tool.</p>
+    <p><i>@ViewBag.Message</i></p>
 </div>
 
 <div class="text-left">
@@ -30,7 +31,7 @@
             </p>
             <p>
                 <input type="submit" id="btnSubmit" name="btnSubmit" value="Translate" />
-                <input type="reset" id="btnReset" name="btnReset" value="Start Again" />
+                <input type="reset" id="btnReset" name="btnReset" value="Start Again" onclick="replaceCurrentPage('/');" />
             </p>
         </form>
     </p>

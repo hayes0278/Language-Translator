@@ -1,3 +1,6 @@
+using LanguageTranslator.ClassLibrary;
+using static System.Net.Mime.MediaTypeNames;
+
 namespace LanguageTranslator.NunitTests
 {
     public class LanguageTranslator_Tests
@@ -9,9 +12,21 @@ namespace LanguageTranslator.NunitTests
         }
 
         [Test]
-        public void Test1()
+        public void TranslateTextAsync_Test()
         {
-            Assert.Pass();
+            string translatorKey = "";
+            string region = "";
+
+            string testText = "Hello, how are you?";
+            string language = "es-ES";
+            string translatedText = string.Empty;
+
+            Console.WriteLine($"Translation task started. Thread ID: {Thread.CurrentThread.ManagedThreadId}");
+
+            OnDemandTranslator translator = new OnDemandTranslator(translatorKey, region);
+            translator.TranslateTextAsync(testText, language);
+            translatedText = translator.TranslatedText;
+            if (!string.IsNullOrEmpty(translatedText)) { Assert.Pass(); } else { Assert.Fail(); }
         }
 
         [Test]

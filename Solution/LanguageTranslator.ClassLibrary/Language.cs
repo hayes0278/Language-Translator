@@ -7,6 +7,6 @@
 
         public string NativeName { get; set; }
 
-        public Enum Direction { get; set; }
+        public string Direction { get; set; }
     }
 }

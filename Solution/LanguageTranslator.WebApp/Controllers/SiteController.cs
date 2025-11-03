@@ -29,6 +29,8 @@ namespace LanguageTranslator.WebApp.Controllers
                 string testTextLanguage = "es";
                 string translationInput = Request.Query["txtTranslationInput"];
                 string toLanguage = Request.Query["selToLanguage"];
+                string translatorKey = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
+                string region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
 
                 if (string.IsNullOrEmpty(translationInput))
                 {
@@ -42,25 +44,21 @@ namespace LanguageTranslator.WebApp.Controllers
                     ViewBag.ToLanguage = toLanguage;
                 }
 
-                LanguageTranslatorApp app = new LanguageTranslatorApp();
-                app.TranslateText(translationInput, toLanguage);
+                if (string.IsNullOrEmpty(translatorKey) || string.IsNullOrEmpty(region))
+                {
+                    ViewBag.Message = "Please enter your Azure API key and region to use the app.";
+                } else
+                {
+                    LanguageTranslatorApp app = new LanguageTranslatorApp();
+                    app.TranslateText(translationInput, toLanguage);
+                    int milliseconds = 5000;
+                    Thread.Sleep(milliseconds);
+                    ViewBag.TranslatedText = app.TranslatedText;
+                }
 
                 ViewBag.InputText = translationInput;
-                ViewBag.TranslatedText = "Probando la aplicación traductor de idiomas.";
-
-                ViewBag.TestTranslation = _localizer["lightweight_language_translator_web_tool"];
             }
 
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        public IActionResult Help()
-        {
             return View();
         }
 

@@ -32,7 +32,8 @@ function replaceCurrentPage(newUrl) {
 }
 
 function changeLanguage(newLanguage) {
-    alert(newLanguage);
+    setCookie("culture", newLanguage, 5);
+    replaceCurrentPage('/')
 }
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
