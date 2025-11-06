@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LanguageTranslator.WebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e95f00e7b58c6b4b46017c73aecaca06fae43795")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+351d8fe2d1a05fcc37564c2d8feff54d9ef7a670")]
 [assembly: System.Reflection.AssemblyProductAttribute("LanguageTranslator.WebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LanguageTranslator.WebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

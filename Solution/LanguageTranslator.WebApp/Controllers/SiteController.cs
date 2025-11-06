@@ -51,9 +51,8 @@ namespace LanguageTranslator.WebApp.Controllers
                 {
                     LanguageTranslatorApp app = new LanguageTranslatorApp();
                     app.TranslateText(translationInput, toLanguage);
-                    int milliseconds = 5000;
-                    Thread.Sleep(milliseconds);
-                    ViewBag.TranslatedText = app.TranslatedText;
+                    ViewBag.TranslatedText = Environment.GetEnvironmentVariable("TRANSLATION"); ;
+                    Console.WriteLine($"Translated Text: {app.TranslatedText}. ");
                 }
 
                 ViewBag.InputText = translationInput;

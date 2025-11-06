@@ -28,6 +28,8 @@ namespace LanguageTranslator.ClassLibrary
                 Response<IReadOnlyList<TranslatedTextItem>> response = await _client.TranslateAsync(targetLanguage, textToTranslate);
                 TranslatedTextItem translation = response.Value.FirstOrDefault();
                 _translatedText = translation?.Translations?.FirstOrDefault()?.Text;
+                Console.WriteLine($"Translated: {_translatedText}");
+                Environment.SetEnvironmentVariable("TRANSLATION", _translatedText);
                 return _translatedText;
             }
             catch (RequestFailedException ex)

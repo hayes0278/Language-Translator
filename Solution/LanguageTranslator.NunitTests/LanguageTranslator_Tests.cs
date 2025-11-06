@@ -18,10 +18,8 @@ namespace LanguageTranslator.NunitTests
             string region = "";
 
             string testText = "Hello, how are you?";
-            string language = "es-ES";
+            string language = "es";
             string translatedText = string.Empty;
-
-            Console.WriteLine($"Translation task started. Thread ID: {Thread.CurrentThread.ManagedThreadId}");
 
             OnDemandTranslator translator = new OnDemandTranslator(translatorKey, region);
             translator.TranslateTextAsync(testText, language);
