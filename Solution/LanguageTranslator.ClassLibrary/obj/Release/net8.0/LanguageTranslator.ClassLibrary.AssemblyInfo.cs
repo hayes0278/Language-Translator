@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LanguageTranslator.ClassLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e95f00e7b58c6b4b46017c73aecaca06fae43795")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08952ae315f51c0a4724536e348946b6b7d95bbe")]
 [assembly: System.Reflection.AssemblyProductAttribute("LanguageTranslator.ClassLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LanguageTranslator.ClassLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

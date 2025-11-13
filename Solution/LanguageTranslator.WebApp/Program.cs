@@ -28,6 +28,7 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
 Environment.SetEnvironmentVariable("AZURE_TRANSLATOR_KEY", "");
 Environment.SetEnvironmentVariable("AZURE_TRANSLATOR_REGION", "");
 Environment.SetEnvironmentVariable("AZURE_TRANSLATOR_ENDPOINT", "https://api.cognitive.microsofttranslator.com/");
+// Also one in LanguageTranslator_Tests.cs
 
 var app = builder.Build();
 app.UseRequestLocalization();

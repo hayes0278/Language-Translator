@@ -10,7 +10,7 @@
         "tags": [
           "Language"
         ],
-        "operationId": "GetLanguageTranslation",
+        "operationId": "GetLanguages",
         "responses": {
           "200": {
             "description": "OK",

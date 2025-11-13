@@ -1,6 +1,5 @@
 ﻿using Azure;
 using Azure.AI.Translation.Text;
-using static System.Net.WebRequestMethods;
 
 namespace LanguageTranslator.ClassLibrary
 {
@@ -45,6 +44,12 @@ namespace LanguageTranslator.ClassLibrary
             string key = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
             string endpoint = "https://api.cognitive.microsofttranslator.com/";
             string region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
+
+            if (string.IsNullOrEmpty(key) || string.IsNullOrEmpty(key))
+            {
+                Console.WriteLine("Please enter your Azure translator key and region to use the app.");
+                return;
+            }
 
             var client = new TextTranslationClient(new AzureKeyCredential(key), region);
 

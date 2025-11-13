@@ -21,20 +21,20 @@ namespace LanguageTranslator.WebAPI.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetLanguageTranslation")]
+        [HttpGet(Name = "GetLanguages")]
         public IEnumerable<Language> Get()
         {
             LanguageTranslatorApp translatorApp = new LanguageTranslatorApp();
             translatorApp.GetLanguageList();
+            var languageList = translatorApp.LanguageList;
 
             return Enumerable.Range(1, 5).Select(index => new Language
             {
-                Abbreviation = Summaries[Random.Shared.Next(Summaries.Length)],
-                Name = Summaries[Random.Shared.Next(Summaries.Length)],
-                NativeName = Summaries[Random.Shared.Next(Summaries.Length)],
-                Direction = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+                Abbreviation = languageList[index].Abbreviation,
+                Name = languageList[index].Name,
+                NativeName = languageList[index].NativeName,
+                Direction = languageList[index].Direction
+            }).ToArray();
         }
     }
 }

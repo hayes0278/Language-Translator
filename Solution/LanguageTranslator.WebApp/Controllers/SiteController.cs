@@ -3,8 +3,6 @@ using LanguageTranslator.WebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using System.Diagnostics;
-using System.Runtime.CompilerServices;
-using System.Text.Json;
 
 namespace LanguageTranslator.WebApp.Controllers
 {

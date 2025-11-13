@@ -1,10 +1,13 @@
 using LanguageTranslator.ClassLibrary;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace LanguageTranslator.NunitTests
 {
     public class LanguageTranslator_Tests
     {
+        string _translatorKey = "";
+        string _region = "";
+        // also check one in Program.cs
+
         [SetUp]
         public void Setup()
         {
@@ -12,37 +15,44 @@ namespace LanguageTranslator.NunitTests
         }
 
         [Test]
-        public void TranslateTextAsync_Test()
+        public void ODTTranslateTextAsync_Test()
         {
-            string translatorKey = "";
-            string region = "";
-
             string testText = "Hello, how are you?";
             string language = "es";
             string translatedText = string.Empty;
 
-            OnDemandTranslator translator = new OnDemandTranslator(translatorKey, region);
+            OnDemandTranslator translator = new OnDemandTranslator(_translatorKey, _region);
             translator.TranslateTextAsync(testText, language);
             translatedText = translator.TranslatedText;
             if (!string.IsNullOrEmpty(translatedText)) { Assert.Pass(); } else { Assert.Fail(); }
         }
 
         [Test]
-        public void Test2()
+        public void GetLanguageList_Test()
         {
-            Assert.Pass();
+            LanguageTranslatorApp translatorApp = new LanguageTranslatorApp();
+            translatorApp.GetLanguageList();
+            var languages = translatorApp.LanguageList;
+            if (languages != null) { Assert.Pass(); } else { Assert.Fail(); }
         }
 
         [Test]
-        public void Test3()
+        public void AppTranslateTextAsync_Test()
         {
-            Assert.Pass();
+            string testText = "Hello, how are you?";
+            string language = "es";
+            string translatedText = string.Empty;
+
+            LanguageTranslatorApp translatorApp = new LanguageTranslatorApp();
+            translatorApp.TranslateText(testText, language);
+            var languages = translatorApp.LanguageList;
+            if (languages != null) { Assert.Pass(); } else { Assert.Fail(); }
         }
 
-        [Test]
-        public void Test4()
+        [TearDown]
+        public void TearDown()
         {
-            Assert.Pass();
+
         }
     }
 }

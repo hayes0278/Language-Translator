@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using Azure;
+﻿using Azure;
 using Azure.AI.Translation.Text;
 
 namespace LanguageTranslator.ClassLibrary

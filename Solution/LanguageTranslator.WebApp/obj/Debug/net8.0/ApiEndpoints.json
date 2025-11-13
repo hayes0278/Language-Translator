@@ -18,7 +18,7 @@
         "StatusCode": 200
       }
     ],
-    "EndpointName": "GetLanguageTranslation"
+    "EndpointName": "GetLanguages"
   },
   {
     "ContainingType": "LanguageTranslator.WebAPI.Controllers.LanguageTranslatorController",
