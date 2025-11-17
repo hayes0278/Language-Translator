@@ -125,4 +125,7 @@
     <value />
     <comment>Welcome to</comment>
   </data>
+  <data name="all_rights_reserved" xml:space="preserve">
+    <value>Deauch</value>
+  </data>
 </root>
