@@ -25,8 +25,8 @@ namespace LanguageTranslator.WebApp.Controllers
             {
                 string testTextInput = "Testing the language translator app.";
                 string testTextLanguage = "es";
-                string? translationInput = Request.Query["txtTranslationInput"];
-                string? toLanguage = Request.Query["selToLanguage"];
+                string? translationInput = Request.Query["txtTranslationInput"].ToString().Trim();
+                string? toLanguage = Request.Query["selToLanguage"].ToString().Trim();
                 string? translatorKey = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
                 string? region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
 

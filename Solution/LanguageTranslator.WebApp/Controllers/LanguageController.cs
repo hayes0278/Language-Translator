@@ -1,5 +1,7 @@
 using LanguageTranslator.ClassLibrary;
+using LanguageTranslator.WebApp.Controllers;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 
 namespace LanguageTranslator.WebAPI.Controllers
 {
@@ -15,10 +17,12 @@ namespace LanguageTranslator.WebAPI.Controllers
         private string[] _languageList;
 
         private readonly ILogger<LanguageController> _logger;
+        private readonly IStringLocalizer<LanguageController> _localizer;
 
-        public LanguageController(ILogger<LanguageController> logger)
+        public LanguageController(ILogger<LanguageController> logger, IStringLocalizer<LanguageController> localizer)
         {
             _logger = logger;
+            _localizer = localizer;
         }
 
         [HttpGet(Name = "GetLanguages")]
