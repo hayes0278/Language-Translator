@@ -27,7 +27,7 @@ namespace LanguageTranslator.WebAPI.Controllers
             language = language.Trim();
 
             try
-                {
+            {
                 Console.WriteLine($"Main thread started. Thread ID: {Thread.CurrentThread.ManagedThreadId}");
 
                 Task backgroundTask = Task.Run(() =>
@@ -48,10 +48,10 @@ namespace LanguageTranslator.WebAPI.Controllers
 
                 return translatedText;
             }
-                catch (Exception ex)
-                {
-                    return $"Error: {ex.Message}";
-                }
+            catch (Exception ex)
+            {
+                return $"Error: {ex.Message}";
+            }
         }
     }
 }
