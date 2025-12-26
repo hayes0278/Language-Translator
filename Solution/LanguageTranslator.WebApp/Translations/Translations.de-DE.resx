@@ -118,14 +118,38 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="start_over" xml:space="preserve">
-    <value />
+    <value>Neu starten</value>
     <comment>Start Over</comment>
   </data>
   <data name="welcome_to" xml:space="preserve">
-    <value />
+    <value>Willkommen bei</value>
     <comment>Welcome to</comment>
   </data>
   <data name="all_rights_reserved" xml:space="preserve">
-    <value>Deauch</value>
+    <value>Alle Rechte vorbehalten.</value>
+  </data>
+  <data name="lightweight_language_translator_web_tool" xml:space="preserve">
+    <value>Ein leichtgewichtiges Web-Tool zur Sprachübersetzung.</value>
+  </data>
+  <data name="from_language" xml:space="preserve">
+    <value>Von der Sprache</value>
+  </data>
+  <data name="language_translator" xml:space="preserve">
+    <value>Sprachübersetzer</value>
+  </data>
+  <data name="to_language" xml:space="preserve">
+    <value>Zur Sprache</value>
+  </data>
+  <data name="text_to_translate" xml:space="preserve">
+    <value>Zu übersetzender Text</value>
+  </data>
+  <data name="to_text" xml:space="preserve">
+    <value>Zum Text</value>
+  </data>
+  <data name="from_text" xml:space="preserve">
+    <value>Aus Text</value>
+  </data>
+  <data name="translate" xml:space="preserve">
+    <value>Übersetzen</value>
   </data>
 </root>

@@ -19,16 +19,16 @@ namespace LanguageTranslator.WebApp.Controllers
 
         public IActionResult Index()
         {
-            string formProcessed = Request.Query["btnSubmit"];
+            string? formProcessed = Request.Query["btnSubmit"];
 
             if (formProcessed != null && formProcessed.ToLower() == "translate")
             {
                 string testTextInput = "Testing the language translator app.";
                 string testTextLanguage = "es";
-                string translationInput = Request.Query["txtTranslationInput"];
-                string toLanguage = Request.Query["selToLanguage"];
-                string translatorKey = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
-                string region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
+                string? translationInput = Request.Query["txtTranslationInput"];
+                string? toLanguage = Request.Query["selToLanguage"];
+                string? translatorKey = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
+                string? region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
 
                 if (string.IsNullOrEmpty(translationInput))
                 {

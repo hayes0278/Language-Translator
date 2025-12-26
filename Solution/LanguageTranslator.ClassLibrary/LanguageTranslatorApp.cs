@@ -23,8 +23,8 @@ namespace LanguageTranslator.ClassLibrary
 
             Task backgroundTask = Task.Run(() =>
             {
-                string translatorKey = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
-                string region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
+                string? translatorKey = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
+                string? region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
 
                 Console.WriteLine($"Translation task started. Thread ID: {Thread.CurrentThread.ManagedThreadId}");
 

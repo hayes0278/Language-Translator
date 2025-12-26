@@ -39,8 +39,8 @@ namespace LanguageTranslator.ClassLibrary
         public static async Task Main(string[] args)
         {
             // Replace with your actual key and region
-            string translatorKey = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
-            string region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
+            string? translatorKey = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
+            string? region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
 
             if (string.IsNullOrEmpty(translatorKey) || string.IsNullOrEmpty(region))
             {
