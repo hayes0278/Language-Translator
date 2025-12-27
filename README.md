@@ -2,18 +2,14 @@
 A lightweight language translator web tool written in C#. 
 
 ## Features
-- Auto detect user entered source language.
-- Copy and paste from the clipboard.
-- Supports 100 different translation languages.
-- Change the destination language.
+- Copy and paste from the clipboard (if permitted).
 - REST based API for external queries.
+- Supports translations to Spanish, French and German.
 
 ## Screenshots
 ![Home Page Screenshot](Media/Screenshots/HomePage.png)
 
 ![Swagger Screenshot](Media/Screenshots/SwaggerPage.png)
-
-![Mobile Screenshot](Media/Screenshots/MobilePage.png)
 
 ## Source Code
 View the projects [Source Code](https://github.com/hayes0278/Language-Translator/tree/main/).
@@ -32,3 +28,7 @@ View the projects [Source Code](https://github.com/hayes0278/Language-Translator
 ## Limitations
 - Does not have any security code needed for a production deployment.
 - Azure key and region are in two different locations for the unit tests.
+
+## Future Features
+- Auto detect user entered source language.
+- Supports 100 different translation languages.
