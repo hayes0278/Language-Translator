@@ -56,6 +56,10 @@ namespace LanguageTranslator.WebApp.Controllers
                 ViewBag.InputText = translationInput;
             }
 
+            ViewBag.Title = "Language Translator";
+            ViewBag.TagLine = "A lightweight language translator web tool.";
+            ViewBag.AllRightsReserved = "All rights reserved.";
+
             return View();
         }
 

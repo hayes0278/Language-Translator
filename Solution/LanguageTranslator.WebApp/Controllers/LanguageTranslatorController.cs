@@ -1,5 +1,4 @@
 using LanguageTranslator.ClassLibrary;
-using LanguageTranslator.WebApp.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 
@@ -9,11 +8,6 @@ namespace LanguageTranslator.WebAPI.Controllers
     [Route("[controller]")]
     public class LanguageTranslatorController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         private readonly ILogger<LanguageTranslatorController> _logger;
         private readonly IStringLocalizer<LanguageTranslatorController> _localizer;
 

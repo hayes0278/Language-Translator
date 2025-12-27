@@ -6,11 +6,9 @@ namespace LanguageTranslator.ClassLibrary
     public class LanguageTranslatorApp
     {
         #region fields
-
         private Language[] _languageList;
         private int _languageCount = 0;
         private string _translatedText = null;
-
         #endregion
 
         #region constructors
@@ -41,9 +39,9 @@ namespace LanguageTranslator.ClassLibrary
         public void GetLanguageList ()
         {
             // Replace with your actual Translator service key and endpoint
-            string key = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
+            string? key = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_KEY");
             string endpoint = "https://api.cognitive.microsofttranslator.com/";
-            string region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
+            string? region = Environment.GetEnvironmentVariable("AZURE_TRANSLATOR_REGION");
 
             if (string.IsNullOrEmpty(key) || string.IsNullOrEmpty(key))
             {
@@ -83,12 +81,6 @@ namespace LanguageTranslator.ClassLibrary
         #endregion
 
         #region private methods
-
-        private static void MyPrivateMethod()
-        {
-
-        }
-
         #endregion
 
         #region properties

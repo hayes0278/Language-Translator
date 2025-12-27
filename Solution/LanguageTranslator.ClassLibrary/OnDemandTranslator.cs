@@ -6,14 +6,10 @@ namespace LanguageTranslator.ClassLibrary
     public class OnDemandTranslator
     {
         private readonly TextTranslationClient _client;
-        private string _region;
-        private string _language;
-        private string _originalText;
         private string _translatedText;
 
         public OnDemandTranslator(string translatorKey, string region)
         {
-            _region = region;
             var credential = new AzureKeyCredential(translatorKey);
             _client = new TextTranslationClient(credential, region);
         }
